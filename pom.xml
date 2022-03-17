@@ -32,7 +32,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <flink.version>1.11.1</flink.version>
+        <flink.version>1.12.2</flink.version>
         <scala.version>2.11</scala.version>
         <kudu.version>1.11.1</kudu.version>
         <log4j.version>1.2.17</log4j.version>
@@ -131,7 +131,11 @@
             <version>${flink.version}</version>
             <scope>provided</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.6</version>
+        </dependency>
     </dependencies>
     <build>
         <!--指定打包后的文件名称-->
